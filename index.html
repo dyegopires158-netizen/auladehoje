@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Desconto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Desconto</h1>
+        <p class="subtitulo">Informe o valor total da compra para calcular o desconto.</p>
+
+        <form id="formCompra">
+            <label for="valorCompra">Valor da Compra (R$):</label>
+            <input
+                type="number"
+                id="valorCompra"
+                name="valorCompra"
+                placeholder="Digite o valor da compra"
+                step="0.01"
+                min="0"
+                required
+            >
+
+            <button type="submit">Calcular Desconto</button>
+        </form>
+
+        <div id="resultado" class="resultado oculto">
+            <h2>Resultado</h2>
+            <p id="valorOriginal"></p>
+            <p id="percentualDesconto"></p>
+            <p id="valorDesconto"></p>
+            <p id="valorFinal"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
